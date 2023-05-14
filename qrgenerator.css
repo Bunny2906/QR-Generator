@@ -1,0 +1,88 @@
+body{
+    text-align: center;
+    font-family: 'Poppins';
+    background-color: rgb(188, 167, 172);
+}
+.main{
+    width: 450px;
+    height: 210px;
+    border-radius: 10px;
+    background-color: rgb(204, 224, 242);
+    margin: auto;
+    margin-top:70px;
+    align-items: center;
+    transition: height 0.3s ease;
+}
+.main.active{
+    height: 450px;
+}
+input{
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    font-family: 'Poppins';
+    font-size: 14px;
+    border: none;
+    outline: none;
+}
+button{
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(38, 41, 225);
+    font-family: 'Poppins';
+    font-size: 16px;
+    border: none;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.imgsection{
+    width: 300px;
+    height: 200px;
+    background-color: white;
+    margin: auto;
+    text-align: center;
+    margin-top: 30px;
+    border-radius: 5px;
+    opacity: 0;
+    pointer-events: none;
+}
+.imgsection img{
+    height: 100px;
+    width: 100px;
+    margin-top: 50px;
+}
+.main.active .imgsection{
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.5s 0.05s ease;
+}
+a button{
+    all: unset;
+    margin: 5px;
+}
+
+@media(max-width:480px){
+    .main{
+        width: 92%;
+        height: 170px;
+    }
+    .main.active{
+        height: 410px;
+    }
+    h1{
+        font-size: 25px;
+    }
+    input{
+        width: 90%;
+        height: 30px;
+    }
+    button{
+        width: 90%;
+        height: 30px
+    }
+    .imgsection{
+        width: 90%;
+    }
+}
