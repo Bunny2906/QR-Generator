@@ -66,21 +66,21 @@ a button{
 @media(max-width:480px){
     .main{
         width: 92%;
-        height: 170px;
+        height: 180px;
     }
     .main.active{
-        height: 410px;
+        height: 420px;
     }
     h1{
         font-size: 25px;
     }
     input{
         width: 90%;
-        height: 30px;
+        height: 35px;
     }
     button{
         width: 90%;
-        height: 30px
+        height: 35px
     }
     .imgsection{
         width: 90%;
